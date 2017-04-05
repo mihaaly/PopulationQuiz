@@ -4,15 +4,18 @@
     <dimen name="dimen_default_spacer">8dp</dimen>
     <dimen name="dimen_card_content_padding">16dp</dimen>
     <dimen name="dimen_card_corner_radius">5dp</dimen>
+    <dimen name="dimen_option_left_padding">8dp</dimen>
+    <dimen name="dimen_option_left_margin">32dp</dimen>
 
     <!-- Touch target related dimensions. -->
     <dimen name="dimen_touch_target">56dp</dimen>
 
     <!-- Font size related dimensions. -->
     <dimen name="dimen_title_text_size">34sp</dimen>
-    <dimen name="dimen_description_text_size">14sp</dimen>
+    <dimen name="dimen_description_text_size">20sp</dimen>
     <dimen name="dimen_button_text_size">14sp</dimen>
-    <dimen name="dimen_question_text_size">14sp</dimen>
+    <dimen name="dimen_question_text_size">16sp</dimen>
+    <dimen name="dimen_answer_text_size">14sp</dimen>
 
 
 </resources>

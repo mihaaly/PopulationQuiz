@@ -1,8 +1,42 @@
 <resources>
     <string name="app_name">PopulationQuiz</string>
+
     <!-- Home screen texts. -->
     <string name="string_title">World \nPopulation \nQuiz</string>
-    <string name="string_start_button">Start quiz</string>
     <string name="string_short_description">How many are we?</string>
+
+    <!-- Button captions. -->
+    <string name="string_start_button">Start quiz</string>
+    <string name="string_submit_button">Submit</string>
+    <string name="string_reset_button">Reset</string>
+    <string name="string_more_button">More</string>
+
+    <!-- First question. -->
     <string name="string_question01">What is the name of the planet humans live on?</string>
+
+    <!-- Second question, and possible answers. -->
+    <string name="string_question02">How many people live currently on Earth?</string>
+    <string name="string_question02_answer_A">roughly 3 500 000 000</string>
+    <string name="string_question02_answer_B">roughly 6 500 000 000</string>
+    <string name="string_question02_answer_C">roughly 7 500 000 000</string>
+    <string name="string_question02_answer_D">roughly 8 500 000 000</string>
+
+    <!-- Third question, and possible answers. -->
+    <string name="string_question03">What was the number of humans living on Earth in 1974?</string>
+    <string name="string_question03_answer_A">roughly 4 000 000 000</string>
+    <string name="string_question03_answer_B">roughly 6 000 000 000</string>
+    <string name="string_question03_answer_C">roughly 7 000 000 000</string>
+    <string name="string_question03_answer_D">roughly 8 000 000 000</string>
+
+    <!-- Fourth question, and possible answers. -->
+    <string name="string_question04">When did the steady population growth begin?</string>
+    <string name="string_question04_answer_A">industrial revolution</string>
+    <string name="string_question04_answer_B">around 1974</string>
+    <string name="string_question04_answer_C">around 8000 BC.</string>
+    <string name="string_question04_answer_D">agricultural revolution</string>
+
+    <!-- Fifth question, and possible answers. -->
+    <string name="string_question05">What is the estimated average net population growth per year?</string>
+    <string name="string_question05_answer_A">about 10 000 000</string>
+    <string name="string_question05_answer_B">about 80 000 000</string>
 </resources>

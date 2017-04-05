@@ -48,7 +48,7 @@
 
         </RelativeLayout>
 
-        <!--Button to start quiz activity.-->
+        <!-- START QUIZ button starts quiz activity. -->
         <Button
             android:id="@+id/button_start_quiz"
             style="@style/style_button"

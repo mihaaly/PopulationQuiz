@@ -47,9 +47,22 @@
         <item name="android:textSize">@dimen/dimen_question_text_size</item>
     </style>
 
-    <!-- Quiz cards EditText style. -->
-
-
-
     <!-- Quiz cards answers text style. -->
+    <style name="style_answer_text">
+        <item name="android:textColor">@color/colorLightP</item>
+        <item name="android:textSize">@dimen/dimen_answer_text_size</item>
+    </style>
+
+    <!-- Quiz cards radio button style. -->
+    <style name="style_answer_text.radio_button">
+        <item name="android:paddingLeft">@dimen/dimen_option_left_padding</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_default_spacer</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_option_left_margin</item>
+    </style>
+
+    <!-- Divider style for Bottom bar. -->
+    <style name="style_divider">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_margin">@dimen/dimen_default_spacer</item>
+    </style>
 </resources>
