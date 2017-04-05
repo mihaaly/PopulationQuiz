@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opening screen colours.-->
+    <color name="colorPrimary">#39F2D2</color>
+    <color name="colorPrimaryDark">@color/colorDarkP</color>
+    <color name="colorDarkP">#00325A</color>
+    <color name="colorLightP">#014379</color>
+    <color name="colorAccent">#29B6F6</color>
+</resources>

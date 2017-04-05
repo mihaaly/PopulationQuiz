@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.populationquiz.MainActivity">
+
+    <!--Upper part of screen with stick man theme.-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man_pattern" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_default_margin">
+
+            <!--App name, title of the app.-->
+            <TextView
+                android:id="@+id/view_title"
+                style="@style/style_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_default_spacer"
+                android:text="@string/string_title" />
+
+            <!--Short description.-->
+            <TextView
+                android:id="@+id/view_description"
+                style="@style/style_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/view_title"
+                android:layout_alignRight="@id/view_title"
+                android:layout_below="@id/view_title"
+                android:text="@string/string_short_description" />
+
+        </RelativeLayout>
+
+        <!--Button to start quiz activity.-->
+        <Button
+            android:id="@+id/button_start_quiz"
+            style="@style/style_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightP"
+            android:text="@string/string_start_button"
+            android:onClick="startQuiz"/>
+
+    </LinearLayout>
+
+</LinearLayout>

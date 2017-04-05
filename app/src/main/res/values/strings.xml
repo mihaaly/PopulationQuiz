@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PopulationQuiz</string>
+    <!-- Home screen texts. -->
+    <string name="string_title">World \nPopulation \nQuiz</string>
+    <string name="string_start_button">Start quiz</string>
+    <string name="string_short_description">How many are we?</string>
+    <string name="string_question01">What is the name of the planet humans live on?</string>
+</resources>
