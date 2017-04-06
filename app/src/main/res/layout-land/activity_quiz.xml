@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,20 +9,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <!-- Stick man theme image. -->
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/main_background" />
 
         <!-- First question.-->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,8 +36,8 @@
                     android:text="@string/string_question01" />
 
                 <EditText
-                    android:id="@+id/editText_planet"
                     style="@style/style_answer_text"
+                    android:id="@+id/editText_planet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textCapWords"
@@ -48,17 +48,17 @@
         <!-- Second question. -->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/style_question_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question02" />
 
@@ -99,17 +99,17 @@
         <!-- Third question. -->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/style_question_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question03" />
 
@@ -149,17 +149,17 @@
         <!-- Fourth question. -->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/style_question_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question04" />
                 <CheckBox
@@ -175,7 +175,7 @@
                     style="@style/style_answer_text.radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_question04_answer_B" />
+                    android:text="@string/string_question04_answer_B"/>
 
                 <CheckBox
                     android:id="@+id/true04"
@@ -196,20 +196,19 @@
         <!-- Fifth question. -->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/style_question_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question05" />
-
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -232,40 +231,40 @@
 
         <!-- Stick man theme image. -->
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/main_background" />
 
         <!-- Bottom bar. -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:background="@color/colorLightP">
 
             <!-- SUBMIT  button submits answers for check, and gives score.-->
             <Button
                 android:id="@+id/button_submit"
                 style="@style/style_button"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/dimen_touch_target"
+                android:layout_width="@dimen/dimen_touch_target"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="submit"
-                android:text="@string/string_submit_button" />
+                android:text="@string/string_submit_button"/>
 
             <!-- Divider. -->
             <View
                 style="@style/style_divider"
-                android:layout_width="2dp"
-                android:layout_height="match_parent"/>
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
 
             <!-- RESET button, resets answers and navigates to home screen. -->
             <Button
                 android:id="@+id/button_reset"
                 style="@style/style_button"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/dimen_touch_target"
+                android:layout_width="@dimen/dimen_touch_target"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:onClick="resetScore"
                 android:text="@string/string_reset_button"/>
@@ -273,18 +272,18 @@
             <!-- Divider. -->
             <View
                 style="@style/style_divider"
-                android:layout_width="2dp"
-                android:layout_height="match_parent"/>
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
 
             <!-- MORE button Starts new activity with some background info. -->
             <Button
                 android:id="@+id/button_more"
                 style="@style/style_button"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/dimen_touch_target"
+                android:layout_width="@dimen/dimen_touch_target"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/string_more_button"/>
         </LinearLayout>
     </LinearLayout>
 
-</ScrollView>
+</HorizontalScrollView>

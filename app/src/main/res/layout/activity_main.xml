@@ -55,8 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorLightP"
-            android:text="@string/string_start_button"
-            android:onClick="startQuiz"/>
+            android:onClick="startQuiz"
+            android:text="@string/string_start_button" />
 
     </LinearLayout>
 

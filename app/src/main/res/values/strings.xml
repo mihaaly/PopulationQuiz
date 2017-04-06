@@ -13,6 +13,7 @@
 
     <!-- First question. -->
     <string name="string_question01">What is the name of the planet humans live on?</string>
+    <string name="string_question01_answer">Earth</string>
 
     <!-- Second question, and possible answers. -->
     <string name="string_question02">How many people live currently on Earth?</string>
@@ -39,4 +40,13 @@
     <string name="string_question05">What is the estimated average net population growth per year?</string>
     <string name="string_question05_answer_A">about 10 000 000</string>
     <string name="string_question05_answer_B">about 80 000 000</string>
+
+    <!-- Toast messages. -->
+    <string name="string_correct">" correct."</string>
+    <string name="string_incorrect">" incorrect."</string>
+    <string name="string_partially">" partially"</string>
+    <string name="string_first">First answer</string>
+    <string name="string_second">Second answer</string>
+    <string name="string_third">Third answer</string>
+    <string name="string_fourth">Fourth answer</string>
 </resources>
