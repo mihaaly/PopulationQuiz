@@ -10,6 +10,7 @@
     <string name="string_submit_button">Submit</string>
     <string name="string_reset_button">Reset</string>
     <string name="string_more_button">More</string>
+    <string name="string_home_button">Home</string>
 
     <!-- First question. -->
     <string name="string_question01">What is the name of the planet humans live on?</string>
@@ -55,4 +56,12 @@
     <!-- Info activity strings. -->
     <string name="string_article_title">How many are we?</string>
     <string name="string_chart_caption">The chart illustrates how world population has changed throughout history.</string>
+    <string name="string_article_body01">"At the dawn of agriculture, about 8000 B.C., the population of the world was approximately 5 million. Over the 8,000-year period up to 1 A.D. it grew to 200 million (some estimate 300 million or even 600 million), with a growth rate of under 0.05% per year."</string>
+    <string name="string_article_body02">"Population in the world currently (2017) is around 7.5 billion and growing at a rate of around 1.11% per year. The current average population gain is estimated at around 80 million per year."</string>
+    <string name="string_article_body03"><b>"World Population Milestones:</b> \n 1 billion: 1804 \n 2 billion: 1927 \n 3 billion: 1960 \n 4 billion: 1974 \n 5 billion: 1987 \n 6 billion: 1999 \n 7 billion: 2011 \n 8 billion: 2023 (estimate) \n 10 billion: 2056 (estimate)"</string>
+    <string name="string_further_reading"><b>Further reading on overpopulation:</b></string>
+    <string name="string_further_reading01"><u>Overpopulation in pictures</u></string>
+    <string name="string_further_reading02"><u>Effects of human overpopulation</u></string>
+    <string name="string_further_reading03"><u>Top problem overpopulation, not climate</u></string>
+    <string name="string_article_sources"><b>Sources:</b></string>
 </resources>

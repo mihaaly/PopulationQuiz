@@ -1,6 +1,5 @@
 <resources
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -57,7 +56,14 @@
     <style name="style_article_body">
         <item name="android:textColor">@color/colorLightP</item>
         <item name="android:textSize">@dimen/dimen_article_body_text_size</item>
+        <item name="android:layout_marginTop">@dimen/dimen_default_spacer</item>
     </style>
+
+    <!-- Style for covert hyperlinks. -->
+    <style name="style_article_body.hyperlink">
+        <item name="android:textColor">#2AB7F6</item>
+    </style>
+
     <!-- Quiz cards radio button style. -->
     <style name="style_answer_text.radio_button">
         <item name="android:paddingLeft">@dimen/dimen_option_left_padding</item>
@@ -66,8 +72,14 @@
     </style>
 
     <!-- Divider style for Bottom bar. -->
-    <style name="style_divider">
+    <style name="style_divider_button">
         <item name="android:background">@color/colorAccent</item>
         <item name="android:layout_margin">@dimen/dimen_default_spacer</item>
+    </style>
+
+    <!-- Divider style for divider in the article. -->
+    <style name="style_divider_text">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginTop">@dimen/dimen_default_margin</item>
     </style>
 </resources>

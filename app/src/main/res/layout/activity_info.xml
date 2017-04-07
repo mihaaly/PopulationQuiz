@@ -18,6 +18,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/main_background" />
 
+        <!-- Article with further information about overpopulation. -->
         <android.support.v7.widget.CardView
             style="@style/style_quiz_card"
             android:layout_width="match_parent"
@@ -52,12 +53,85 @@
                 <TextView
                     style="@style/style_article_body"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_article_body01"/>
 
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_article_body02"/>
+
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/string_article_body03"/>
+
+                // Further reading
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_default_margin"
+                    android:text="@string/string_further_reading"/>
+
+                <TextView
+                    style="@style/style_article_body.hyperlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="goToWeb1"
+                    android:text="@string/string_further_reading01"/>
+
+                <TextView
+                    style="@style/style_article_body.hyperlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="goToWeb2"
+                    android:text="@string/string_further_reading02"/>
+
+                <TextView
+                    style="@style/style_article_body.hyperlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="goToWeb3"
+                    android:text="@string/string_further_reading03"/>
+
+                <View
+                    style="@style/style_divider_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                // Sources
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_article_sources"/>
+
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="https://en.wikipedia.org/wiki/World_population"/>
+
+                <TextView
+                    style="@style/style_article_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="http://www.worldometers.info/world-population/"/>
             </LinearLayout>
-
         </android.support.v7.widget.CardView>
 
+        <!-- Navigates to home screen. -->
+        <Button
+            style="@style/style_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_touch_target"
+            android:text="@string/string_home_button"
+            android:onClick="home"/>
     </LinearLayout>
 
 </ScrollView>

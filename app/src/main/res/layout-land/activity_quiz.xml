@@ -258,9 +258,9 @@
 
             <!-- Divider. -->
             <View
-                style="@style/style_divider"
+                style="@style/style_divider_button"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="1dp"/>
 
             <!-- RESET button, resets answers and navigates to home screen. -->
             <Button
@@ -274,9 +274,9 @@
 
             <!-- Divider. -->
             <View
-                style="@style/style_divider"
+                style="@style/style_divider_button"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="1dp"/>
 
             <!-- MORE button Starts new activity with some background info. -->
             <Button
