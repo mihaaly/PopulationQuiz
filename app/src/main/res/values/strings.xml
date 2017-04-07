@@ -49,4 +49,6 @@
     <string name="string_second">Second answer</string>
     <string name="string_third">Third answer</string>
     <string name="string_fourth">Fourth answer</string>
+    <string name="string_fifth">Fifth answer</string>
+    <string name="string_scoreToast">"Your score is: "</string>
 </resources>
