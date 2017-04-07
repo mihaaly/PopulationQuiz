@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView_quiz2"
+    android:id="@+id/quiz_land"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -285,6 +285,7 @@
                 android:layout_width="@dimen/dimen_touch_target"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:onClick="moreInfo"
                 android:text="@string/string_more_button"/>
         </LinearLayout>
     </LinearLayout>

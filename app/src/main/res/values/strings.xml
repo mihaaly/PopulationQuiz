@@ -51,4 +51,8 @@
     <string name="string_fourth">Fourth answer</string>
     <string name="string_fifth">Fifth answer</string>
     <string name="string_scoreToast">"Your score is: "</string>
+
+    <!-- Info activity strings. -->
+    <string name="string_article_title">How many are we?</string>
+    <string name="string_chart_caption">The chart illustrates how world population has changed throughout history.</string>
 </resources>

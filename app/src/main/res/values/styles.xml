@@ -53,6 +53,11 @@
         <item name="android:textSize">@dimen/dimen_answer_text_size</item>
     </style>
 
+    <!-- Info article body style. -->
+    <style name="style_article_body">
+        <item name="android:textColor">@color/colorLightP</item>
+        <item name="android:textSize">@dimen/dimen_article_body_text_size</item>
+    </style>
     <!-- Quiz cards radio button style. -->
     <style name="style_answer_text.radio_button">
         <item name="android:paddingLeft">@dimen/dimen_option_left_padding</item>

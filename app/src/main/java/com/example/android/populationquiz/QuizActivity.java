@@ -12,9 +12,6 @@ import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
-import static com.example.android.populationquiz.R.id.editText_planet;
-import static com.example.android.populationquiz.R.id.scrollView_quiz;
-import static com.example.android.populationquiz.R.id.scrollView_quiz2;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -34,15 +31,15 @@ public class QuizActivity extends AppCompatActivity {
      */
     public void submit (View view) {
         // Scrolls back to start.
-        int orientation=this.getResources().getConfiguration().orientation;
-        if(orientation== Configuration.ORIENTATION_PORTRAIT){
+        int orientation = this.getResources().getConfiguration().orientation;
+        if(orientation == Configuration.ORIENTATION_PORTRAIT){
             //code for portrait mode
-            ScrollView scrollView = (ScrollView) findViewById(scrollView_quiz);
+            ScrollView scrollView = (ScrollView) findViewById(R.id.quiz_portrait);
             scrollView.scrollTo(0, 0);
         }
         else{
             //code for landscape mode
-            HorizontalScrollView scrollView2 = (HorizontalScrollView) findViewById(scrollView_quiz2);
+            HorizontalScrollView scrollView2 = (HorizontalScrollView) findViewById(R.id.quiz_land);
             scrollView2.scrollTo(0, 0);
         }
         // Reset and check.
@@ -60,7 +57,7 @@ public class QuizActivity extends AppCompatActivity {
      * Checks if first answer is correct, assigns points, gives feedback if answer is correct.
      */
     public void checkFirst () {
-        EditText editTextPlanet = (EditText) findViewById(editText_planet);
+        EditText editTextPlanet = (EditText) findViewById(R.id.editText_planet);
         String answer = editTextPlanet.getEditableText().toString();
         String planet = getString(R.string.string_question01_answer);
         if (answer.equals(planet)) {
@@ -201,6 +198,14 @@ public class QuizActivity extends AppCompatActivity {
     public void resetScore(View view) {
         mScore = 0;
         Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Navigates to InfoActivity for background information.
+     */
+    public void moreInfo (View view) {
+        Intent intent = new Intent (this,InfoActivity.class);
         startActivity(intent);
     }
 
