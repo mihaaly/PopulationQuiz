@@ -125,6 +125,13 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Stick man theme image. -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_background" />
+
         <!-- Navigates to home screen. -->
         <Button
             style="@style/style_button"
