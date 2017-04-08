@@ -26,7 +26,7 @@ public class InfoActivity extends AppCompatActivity {
      * Navigates to the web page.
      */
     public void goToWeb2 (View view) {
-        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://www.theguardian.com/global-development-professionals-network/gallery/2015/apr/01/over-population-over-consumption-in-pictures"));
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.everythingconnects.org/overpopulation-effects.html"));
         startActivity(intent);
     }
 
