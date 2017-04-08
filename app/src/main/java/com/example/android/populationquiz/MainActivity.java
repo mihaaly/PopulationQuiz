@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Starts quiz.
+     * Starts quiz (QuizActivity).
      */
 
-    public void startQuiz (View view) {
-        Intent intent = new Intent(this,QuizActivity.class);
+    public void startQuiz(View view) {
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
 
     }

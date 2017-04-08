@@ -30,12 +30,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                // Question one
                 <TextView
                     style="@style/style_question_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question01" />
 
+                // Answer
                 <EditText
                     android:id="@+id/editText_planet"
                     style="@style/style_answer_text"
@@ -58,29 +60,34 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                // Question two
                 <TextView
                     style="@style/style_question_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question02" />
 
+                // Answer
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp">
 
+                    // Option A
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question02_answer_A" />
 
+                    // Option B
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question02_answer_B" />
 
+                    // Option C
                     <RadioButton
                         android:id="@+id/true02"
                         style="@style/style_answer_text.radio_button"
@@ -88,12 +95,12 @@
                         android:layout_height="wrap_content"
                         android:text="@string/string_question02_answer_C" />
 
+                    // Option D
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question02_answer_D" />
-
                 </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -109,17 +116,20 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                // Question three
                 <TextView
                     style="@style/style_question_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question03" />
 
+                // Answer
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp">
 
+                    // Option A
                     <RadioButton
                         android:id="@+id/true03"
                         style="@style/style_answer_text.radio_button"
@@ -127,18 +137,21 @@
                         android:layout_height="wrap_content"
                         android:text="@string/string_question03_answer_A" />
 
+                    // Option B
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question03_answer_B" />
 
+                    // Option C
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question03_answer_C" />
 
+                    // Option D
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
@@ -159,11 +172,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                // Question four
                 <TextView
                     style="@style/style_question_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question04" />
+
+                // Option A
                 <CheckBox
                     android:id="@+id/false01"
                     style="@style/style_answer_text.radio_button"
@@ -172,6 +188,7 @@
                     android:layout_marginTop="@dimen/dimen_default_spacer"
                     android:text="@string/string_question04_answer_A" />
 
+                // Option B
                 <CheckBox
                     android:id="@+id/false02"
                     style="@style/style_answer_text.radio_button"
@@ -179,19 +196,21 @@
                     android:layout_height="wrap_content"
                     android:text="@string/string_question04_answer_B" />
 
+                // Option C
                 <CheckBox
                     android:id="@+id/true04"
                     style="@style/style_answer_text.radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_question04_answer_C"/>
+                    android:text="@string/string_question04_answer_C" />
 
+                // Option D
                 <CheckBox
                     android:id="@+id/true05"
                     style="@style/style_answer_text.radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/string_question04_answer_D"/>
+                    android:text="@string/string_question04_answer_D" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -206,23 +225,27 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                // Question five
                 <TextView
                     style="@style/style_question_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/string_question05" />
 
+                // Answer
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp">
 
+                    // Option A
                     <RadioButton
                         style="@style/style_answer_text.radio_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/string_question05_answer_A" />
 
+                    // Option B
                     <RadioButton
                         android:id="@+id/true06"
                         style="@style/style_answer_text.radio_button"
@@ -244,8 +267,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/colorLightP">
+            android:background="@color/colorLightP"
+            android:orientation="horizontal">
 
             <!-- SUBMIT  button submits answers for check, and gives score.-->
             <Button
@@ -261,7 +284,7 @@
             <View
                 style="@style/style_divider_button"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
             <!-- RESET button, resets answers and navigates to home screen. -->
             <Button
@@ -271,13 +294,13 @@
                 android:layout_height="@dimen/dimen_touch_target"
                 android:layout_weight="1"
                 android:onClick="resetScore"
-                android:text="@string/string_reset_button"/>
+                android:text="@string/string_reset_button" />
 
             <!-- Divider. -->
             <View
                 style="@style/style_divider_button"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
             <!-- MORE button Starts new activity with some background info. -->
             <Button
@@ -287,8 +310,7 @@
                 android:layout_height="@dimen/dimen_touch_target"
                 android:layout_weight="1"
                 android:onClick="moreInfo"
-                android:text="@string/string_more_button"/>
+                android:text="@string/string_more_button" />
         </LinearLayout>
     </LinearLayout>
-
 </ScrollView>

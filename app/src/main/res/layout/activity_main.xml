@@ -45,7 +45,6 @@
                 android:layout_alignRight="@id/view_title"
                 android:layout_below="@id/view_title"
                 android:text="@string/string_short_description" />
-
         </RelativeLayout>
 
         <!-- START QUIZ button starts quiz activity. -->
@@ -57,7 +56,5 @@
             android:background="@color/colorLightP"
             android:onClick="startQuiz"
             android:text="@string/string_start_button" />
-
     </LinearLayout>
-
 </LinearLayout>

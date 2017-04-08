@@ -1,3 +1,5 @@
+
+
 package com.example.android.populationquiz;
 
 import android.content.Intent;
@@ -17,7 +19,7 @@ public class InfoActivity extends AppCompatActivity {
     /**
      * Navigates to the web page.
      */
-    public void goToWeb1 (View view) {
+    public void goToWeb1(View view) {
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://www.theguardian.com/global-development-professionals-network/gallery/2015/apr/01/over-population-over-consumption-in-pictures"));
         startActivity(intent);
     }
@@ -25,7 +27,7 @@ public class InfoActivity extends AppCompatActivity {
     /**
      * Navigates to the web page.
      */
-    public void goToWeb2 (View view) {
+    public void goToWeb2(View view) {
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.everythingconnects.org/overpopulation-effects.html"));
         startActivity(intent);
     }
@@ -33,7 +35,7 @@ public class InfoActivity extends AppCompatActivity {
     /**
      * Navigates to the web page.
      */
-    public void goToWeb3 (View view) {
+    public void goToWeb3(View view) {
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.marketwatch.com/story/climate-report-proves-humans-are-the-new-dinosaurs-2013-10-12"));
         startActivity(intent);
     }
@@ -41,7 +43,7 @@ public class InfoActivity extends AppCompatActivity {
     /**
      * Navigates to home screen.
      */
-    public void home (View view){
+    public void home(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

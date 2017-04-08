@@ -29,15 +29,14 @@ public class QuizActivity extends AppCompatActivity {
     /**
      * Scrolls back to start, resets score to 0, submits answers and displays score.
      */
-    public void submit (View view) {
+    public void submit(View view) {
         // Scrolls back to start.
         int orientation = this.getResources().getConfiguration().orientation;
-        if(orientation == Configuration.ORIENTATION_PORTRAIT){
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
             //code for portrait mode
             ScrollView scrollView = (ScrollView) findViewById(R.id.quiz_portrait);
             scrollView.scrollTo(0, 0);
-        }
-        else{
+        } else {
             //code for landscape mode
             HorizontalScrollView scrollView2 = (HorizontalScrollView) findViewById(R.id.quiz_land);
             scrollView2.scrollTo(0, 0);
@@ -50,13 +49,12 @@ public class QuizActivity extends AppCompatActivity {
         checkFourth();
         checkFifth();
         showToast(getString(R.string.string_scoreToast) + mScore + "/6");
-
     }
 
     /**
-     * Checks if first answer is correct, assigns points, gives feedback if answer is correct.
+     * Checks if first answer is correct, assigns points, gives feedback whether answer is correct.
      */
-    public void checkFirst () {
+    public void checkFirst() {
         EditText editTextPlanet = (EditText) findViewById(R.id.editText_planet);
         String answer = editTextPlanet.getEditableText().toString();
         String planet = getString(R.string.string_question01_answer);
@@ -69,7 +67,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     /**
-     * Checks if second answer is correct, assigns points, gives feedback if answer is correct.
+     * Checks if second answer is correct, assigns points, gives feedback whether answer is correct.
      */
     public void checkSecond() {
         RadioButton true02 = (RadioButton) findViewById(R.id.true02);
@@ -80,13 +78,12 @@ public class QuizActivity extends AppCompatActivity {
         } else {
             showToast(getString(R.string.string_second) + getString(R.string.string_incorrect));
         }
-
     }
 
     /**
-     * Checks if third answer is correct, assigns points, gives feedback if answer is correct.
+     * Checks if third answer is correct, assigns points, gives feedback whether answer is correct.
      */
-    public void checkThird (){
+    public void checkThird() {
         RadioButton true03 = (RadioButton) findViewById(R.id.true03);
         boolean isCorrect03 = true03.isChecked();
         if (isCorrect03) {
@@ -100,6 +97,7 @@ public class QuizActivity extends AppCompatActivity {
     /**
      * Checks if fourth answer is correct, assigns points, gives feedback if answer is correct.
      * It's sick, I know :)
+     * Multiple right answers (2). Assigns +1 for every each right answer and -1 for wrong ones.
      */
     public void checkFourth() {
         CheckBox true04 = (CheckBox) findViewById(R.id.true04);
@@ -111,7 +109,7 @@ public class QuizActivity extends AppCompatActivity {
         CheckBox false02 = (CheckBox) findViewById(R.id.false02);
         boolean isFalse02 = false02.isChecked();
 
-
+        // Sick part checking co-variation.
         if (isCorrect04) {
             if (isCorrect05) {
                 mScore += 2;
@@ -120,47 +118,47 @@ public class QuizActivity extends AppCompatActivity {
                         showToast(getString(R.string.string_fourth) + getString(R.string.string_correct));
                     } else { // Two correct answers checked, and one wrong, option B.
                         mScore -= 1;
-                        showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                        showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                     }
                 } else { // Two correct answers checked, and one wrong: option A.
                     mScore -= 1;
-                    if (isFalse02){ // Two correct answers checked, and two wrong ones.
+                    if (isFalse02) { // Two correct answers checked, and two wrong ones.
                         mScore -= 1;
                     }
-                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                 }
             } else { // Only option C is correctly checked.
                 mScore += 1;
-                if(isFalse01){ // And incorrectly also option A is checked.
+                if (isFalse01) { // And incorrectly also option A is checked.
                     mScore -= 1;
-                    if (isFalse02){ // And incorrectly also option B is checked.
+                    if (isFalse02) { // And incorrectly also option B is checked.
                         mScore -= 1;
                     }
-                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                 } else {
                     if (isFalse02) { // And incorrectly option B is checked.
                         mScore -= 1;
                     }
-                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                 }
-                showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
             }
         } else {
             if (isCorrect05) { // Only option D is correctly checked.
                 mScore += 1;
-                if(isFalse01){ // And incorrectly also option A is checked.
+                if (isFalse01) { // And incorrectly also option A is checked.
                     mScore -= 1;
-                    if (isFalse02){ // And incorrectly also option B is checked.
+                    if (isFalse02) { // And incorrectly also option B is checked.
                         mScore -= 1;
                     }
-                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                 } else {
                     if (isFalse02) { // And incorrectly also option B is checked.
                         mScore -= 1;
                     }
-                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                    showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
                 }
-                showToast(getString(R.string.string_fourth) + getString(R.string.string_partially)+ getString(R.string.string_correct));
+                showToast(getString(R.string.string_fourth) + getString(R.string.string_partially) + getString(R.string.string_correct));
             } else { // No correct option is checked.
                 if (isFalse01) { // And incorrectly option A is checked.
                     mScore -= 1;
@@ -179,9 +177,9 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     /**
-     * Checks if fifth answer is correct, assigns points, gives feedback if answer is correct.
+     * Checks if fifth answer is correct, assigns points, gives feedback whether answer is correct.
      */
-    public void checkFifth(){
+    public void checkFifth() {
         RadioButton true06 = (RadioButton) findViewById(R.id.true06);
         boolean isCorrect06 = true06.isChecked();
         if (isCorrect06) {
@@ -197,24 +195,22 @@ public class QuizActivity extends AppCompatActivity {
      */
     public void resetScore(View view) {
         mScore = 0;
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
     /**
      * Navigates to InfoActivity for background information.
      */
-    public void moreInfo (View view) {
-        Intent intent = new Intent (this,InfoActivity.class);
+    public void moreInfo(View view) {
+        Intent intent = new Intent(this, InfoActivity.class);
         startActivity(intent);
     }
 
     /**
-     * Displays short Toast message.
+     * Displays long Toast message.
      */
     public void showToast(String strMessage) {
-        Toast.makeText(getApplicationContext(),strMessage, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), strMessage, Toast.LENGTH_LONG).show();
     }
-
-
 }
