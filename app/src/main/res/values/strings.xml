@@ -31,7 +31,7 @@
     <string name="string_question03_answer_D">roughly 8 000 000 000</string>
 
     <!-- Fourth question, and possible answers. -->
-    <string name="string_question04">When did the steady population growth begin?</string>
+    <string name="string_question04">When did the steady population growth begin? \n(More than one is correct.)</string>
     <string name="string_question04_answer_A">industrial revolution</string>
     <string name="string_question04_answer_B">around 1974</string>
     <string name="string_question04_answer_C">around 8000 BC.</string>
